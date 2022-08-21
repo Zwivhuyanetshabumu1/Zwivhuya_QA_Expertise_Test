@@ -16,7 +16,7 @@ public class Login extends TestBase {
 	
 	ActionMethods Action = new ActionMethods();
 	
-	By USERNAME = By.xpath("//input[@id='username']");
+	
 	By PASSWORD = By.xpath("//input[@id='password']");
 	By LOGIN = By.xpath("//input[@id='login']");
 	
