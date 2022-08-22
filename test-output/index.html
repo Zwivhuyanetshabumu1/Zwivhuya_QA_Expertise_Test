@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Zwivhuya\Automation_Practice\TestAutomationProjects\testng.xml</span>
+                    <span>C:\Users\Zwivhuya\Automation_Practice\Zwivhuya_kurtosys_Technical_Assessment\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.CreateNewPolicy" class="method navigator-link" hash-for-method="Find_Client_By_PolicyNumber">Find_Client_By_PolicyNumber</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.kurtosysTestCase" class="method navigator-link" hash-for-method="KurtosysTechnicalAssessment({Industry=Finance, Company=Kurtosys, TC_ID=TC001, FirstName=Zwivhuya, TesctCaseName=Fillout all the ...)">KurtosysTechnicalAssessment({Industry=Finance, Company=Kurtosys, TC_ID=TC001, FirstName=Zwivhuya, TesctCaseName=Fillout all the ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -122,14 +122,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.CreateNewPolicy</span>
+              <span class="class-name">testCases.kurtosysTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Find_Client_By_PolicyNumber">
-                  </a> <!-- Find_Client_By_PolicyNumber -->
-                  <span class="method-name">Find_Client_By_PolicyNumber</span>
+                  <a name="KurtosysTechnicalAssessment({Industry=Finance, Company=Kurtosys, TC_ID=TC001, FirstName=Zwivhuya, TesctCaseName=Fillout all the ...)">
+                  </a> <!-- KurtosysTechnicalAssessment({Industry=Finance, Company=Kurtosys, TC_ID=TC001, FirstName=Zwivhuya, TesctCaseName=Fillout all the ...) -->
+                  <span class="method-name">KurtosysTechnicalAssessment</span>
+                  <span class="parameters">({Industry=Finance, Company=Kurtosys, TC_ID=TC001, FirstName=Zwivhuya, TesctCaseName=Fillout all the fields with valid data and make email field null, LastName=Netshabumu})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +138,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Zwivhuya\Automation_Practice\TestAutomationProjects\testng.xml</span>
+            <span class="header-content">C:\Users\Zwivhuya\Automation_Practice\Zwivhuya_kurtosys_Technical_Assessment\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -149,14 +150,9 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Test1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.Test1&quot;/&gt;
+      &lt;class name=&quot;testCases.kurtosysTestCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Test2&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testCases.CreateNewPolicy&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -169,9 +165,6 @@
             <ul>
               <li>
                 <span class="test-name">Test1 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Test2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -199,14 +192,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Find_Client_By_PolicyNumber')
-data.setCell(0, 2, 'testCases.CreateNewPolicy')
-data.setCell(0, 3, 12902);
+data.setCell(0, 1, 'KurtosysTechnicalAssessment')
+data.setCell(0, 2, 'testCases.kurtosysTestCase')
+data.setCell(0, 3, 14232);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -221,16 +214,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.Test1</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">LoginTestCase1</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -239,18 +225,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.CreateNewPolicy</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.kurtosysTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">LuanchBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Find_Client_By_PolicyNumber</span>
-                <span class="method-start">13760 ms</span>
+                <span class="method-name">KurtosysTechnicalAssessment({Industry=Finance, Company=Kurtosys, TC_ID=TC001, FirstName=Zwivhuya, TesctCaseName=Fillout all the ...)</span>
+                <span class="method-start">46807 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26841 ms</span>
+                <span class="method-start">61247 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

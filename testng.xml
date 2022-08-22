@@ -10,15 +10,12 @@
   <test  name="Test1">
     <classes>
       
-      <class name="testCases.Test1"/>
+      <class name="testCases.kurtosysTestCase"/>
     </classes>
   </test> <!-- Test -->
   
   
-  <test  name="Test2">
-    <classes>
-      <class name="testCases.CreateNewPolicy"/>
-    </classes>
+  
     
-  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

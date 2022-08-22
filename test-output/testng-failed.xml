@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="reusableMethods.Listerners"/>
   </listeners>
-  <test thread-count="5" parallel="methods" name="Test2(failed)">
+  <test thread-count="5" parallel="methods" name="Test1(failed)">
     <classes>
-      <class name="testCases.CreateNewPolicy">
+      <class name="testCases.kurtosysTestCase">
         <methods>
           <include name="LuanchBrowser"/>
           <include name="tearDown"/>
-          <include name="Find_Client_By_PolicyNumber"/>
+          <include name="KurtosysTechnicalAssessment" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testCases.CreateNewPolicy -->
+      </class> <!-- testCases.kurtosysTestCase -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

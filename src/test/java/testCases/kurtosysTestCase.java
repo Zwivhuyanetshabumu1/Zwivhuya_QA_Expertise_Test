@@ -5,36 +5,36 @@ import java.util.HashMap;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
-
-import pageObjects.Login;
-
+import pageObjects.LandingPage;
+import pageObjects.WhitePaperseBooks;
 import reusableMethods.ExcelDataSheet;
 import testBase.ExtentFactory;
 import testBase.TestBase;
 
-public class Test1 extends TestBase{
+public class kurtosysTestCase extends TestBase{
+	ExcelDataSheet excel = new ExcelDataSheet("WhitePaperDetails");
+	WhitePaperseBooks whitepapersebooks = new WhitePaperseBooks();
+	LandingPage landingpage = new LandingPage();
+
 	
-	Login loginpage = new Login();
-	ExcelDataSheet excel = new ExcelDataSheet("Loginpage");
 	
 	
-	@Test(enabled = false, dataProvider = "LoginData")
-	public void LoginTestCase1(Object obj1) {
-		
+	@Test(enabled =true, dataProvider = "Data")
+	public void KurtosysTechnicalAssessment(Object obj1) throws Throwable {
 		HashMap<String, String> testData = (HashMap<String, String>) obj1;
 		ExtentFactory.getInstance().getExtent().info(testData.get("TesctCaseName"));
-		//loginpage.logIn(testData.get("Username"), testData.get("Password"));
 		
-
+		landingpage.NavigateToResource();
+		whitepapersebooks.FillinTheFields(testData);
+		
 		
 	
-		//loginpage.logIn(testData.get("Username"), testData.get("Password"));
+	
 		
 	}
 	
 	
-	@DataProvider(name = "LoginData")
+	@DataProvider(name = "Data")
 	public Object [][] testDataSupplier() throws Exception {
 		Object[][] obj = new Object[excel.getRowCount()][1];
 		for(int i = 1; i <= excel.getRowCount(); i++) {
@@ -46,3 +46,6 @@ public class Test1 extends TestBase{
 		return obj;
 	}
 }
+
+	
+

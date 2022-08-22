@@ -34,39 +34,6 @@ public class ActionMethods  {
 			//log success message in exgent report
 			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName+"==> Ented value as: "+valueToBeSent);
 
-			/*File src = ((TakesScreenshot)DriverFactory.getInstance().getDriver()).getScreenshotAs(OutputType.FILE);
-
-			SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyy HH-mm-ss");
-			Date date = new Date();
-			String actualDate = format.format(date);
-
-			String  screenshotsPath = System.getProperty("user.dir")+"/reports/Screenshots/"+actualDate+".png";
-
-			File dest = new File(screenshotsPath);
-
-			try {
-				FileUtils.copyFile(src, dest);
-
-
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			try {
-				InputStream is = new FileInputStream(screenshotsPath);
-				byte[] ssBytes = IOUtils.toByteArray(is);
-				String base64 = Base64.getEncoder().encodeToString(ssBytes);
-				ExtentFactory.getInstance().getExtent().addScreenCaptureFromBase64String("data:image/png;base64,"+ base64);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			ExtentFactory.getInstance().removeExtentObject();*/
-
-
-
-
-
 		} catch (Exception e) {
 			//log failure in extent
 			ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Value enter in field: "+fieldName + " is failed due to exception: "+e);
@@ -173,14 +140,17 @@ public class ActionMethods  {
 		String text = "";
 		try {
 			text = element.getText();
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName+"==> Text retried is: "+ text);
+			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName+"==> Text retrived is: "+ text);
 			return text;
 		} catch (Exception e) {		
-			ExtentFactory.getInstance().getExtent().log(Status.FAIL, fieldName+"==> Text not retried due to exception: "+ e);
+			ExtentFactory.getInstance().getExtent().log(Status.FAIL, fieldName+"==> Text not retrived due to exception: "+ e);
 
 		}
 		return text;
 	}
+	
+	
+	
 	
 	
 	
