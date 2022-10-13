@@ -14,7 +14,7 @@ import reusableMethods.ExcelDataSheet;
 import reusableMethods.PropertiesFile;
 
 public class TestBase extends ActionMethods{
-	static BrowserFactory BF = new  BrowserFactory();
+	BrowserFactory BF = new  BrowserFactory();
 	
 
 	
@@ -23,12 +23,7 @@ public class TestBase extends ActionMethods{
 	public static void LuanchBrowser() throws Exception {
 		String broswer = PropertiesFile.getPropertyValue("browser");
 		String url = PropertiesFile.getPropertyValue("url");
-		try {
-			DriverFactory.getInstance().setDriver(BF.creatrBrowserInstance(broswer));
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		DriverFactory.getInstance().setDriver(BF.creatrBrowserInstance(broswer));
 		DriverFactory.getInstance().getDriver().manage().window().maximize();
 		DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		DriverFactory.getInstance().getDriver().navigate().to(url);
