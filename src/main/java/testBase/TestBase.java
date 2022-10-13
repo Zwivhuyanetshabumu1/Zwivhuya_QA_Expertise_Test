@@ -14,16 +14,21 @@ import reusableMethods.ExcelDataSheet;
 import reusableMethods.PropertiesFile;
 
 public class TestBase extends ActionMethods{
-	BrowserFactory BF = new  BrowserFactory();
+	static BrowserFactory BF = new  BrowserFactory();
 	
 
 	
 
 	@BeforeMethod
-	public void LuanchBrowser() throws Exception {
+	public static void LuanchBrowser() throws Exception {
 		String broswer = PropertiesFile.getPropertyValue("browser");
 		String url = PropertiesFile.getPropertyValue("url");
-		DriverFactory.getInstance().setDriver(BF.creatrBrowserInstance(broswer));
+		try {
+			DriverFactory.getInstance().setDriver(BF.creatrBrowserInstance(broswer));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		DriverFactory.getInstance().getDriver().manage().window().maximize();
 		DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		DriverFactory.getInstance().getDriver().navigate().to(url);

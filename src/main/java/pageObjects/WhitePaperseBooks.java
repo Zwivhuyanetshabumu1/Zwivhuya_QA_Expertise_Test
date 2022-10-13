@@ -19,8 +19,8 @@ public class WhitePaperseBooks extends TestBase{
 	By Industry = By.xpath("//input[@id='18882_231677pi_18882_231677']");
 	By Subscribe = By.xpath("//label[@for='18882_234828pi_18882_234828_3080800']");
 	By SendButton = By.xpath("//input[@type='submit']");
-	By ValidationMessage = By.xpath("//p[@class='error no-label']");
-	By Iframe = By.xpath("(//div[@class='elementor-post__card'])[4]");
+	//By ValidationMessage = By.xpath("//p[@class='error no-label']");
+
 	
 	
 	
@@ -38,7 +38,7 @@ public class WhitePaperseBooks extends TestBase{
 		Action.sendKeys_custom(DriverFactory.getInstance().getDriver().findElement(Industry), "Industry", testData.get("Industry"));
 		Action.click_custom(DriverFactory.getInstance().getDriver().findElement(Subscribe), "Subscribe to our newsletter");
 		Action.click_custom(DriverFactory.getInstance().getDriver().findElement(SendButton), "Send me a Copy");
-		Action.getText_custom(DriverFactory.getInstance().getDriver().findElement(ValidationMessage), "Pop error message");
+		//Action.getText_custom(DriverFactory.getInstance().getDriver().findElement(ValidationMessage), "Pop error message");
 		
 		
 

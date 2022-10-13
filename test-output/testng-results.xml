@@ -1,32 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-22T08:44:01 CAT" name="Suite" finished-at="2022-08-22T08:45:03 CAT" duration-ms="61846">
+  <suite started-at="2022-10-14T01:00:00 CAT" name="Default suite" finished-at="2022-10-14T01:00:18 CAT" duration-ms="18212">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1ed4ae0f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-08-22T08:44:01 CAT" name="Test1" finished-at="2022-08-22T08:45:03 CAT" duration-ms="61846">
-      <class name="testCases.kurtosysTestCase">
-        <test-method is-config="true" signature="LuanchBrowser()[pri:0, instance:testCases.kurtosysTestCase@71178a52]" started-at="2022-08-22T08:44:02 CAT" name="LuanchBrowser" finished-at="2022-08-22T08:44:49 CAT" duration-ms="46805" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LuanchBrowser -->
-        <test-method signature="KurtosysTechnicalAssessment(java.lang.Object)[pri:0, instance:testCases.kurtosysTestCase@71178a52]" started-at="2022-08-22T08:44:49 CAT" name="KurtosysTechnicalAssessment" data-provider="Data" finished-at="2022-08-22T08:45:03 CAT" duration-ms="14232" status="PASS">
+    <test started-at="2022-10-14T01:00:00 CAT" name="Default test" finished-at="2022-10-14T01:00:18 CAT" duration-ms="18212">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@1ed4ae0f]" started-at="2022-10-14T01:00:00 CAT" name="setUpClass" finished-at="2022-10-14T01:00:01 CAT" duration-ms="999" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Industry=Finance, Company=Kurtosys, TC_ID=TC001, FirstName=Zwivhuya, TesctCaseName=Fillout all the fields with valid data and make email field null, LastName=Netshabumu}]]>
+                <![CDATA[org.testng.TestRunner@de77146]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- KurtosysTechnicalAssessment -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.kurtosysTestCase@71178a52]" started-at="2022-08-22T08:45:03 CAT" name="tearDown" finished-at="2022-08-22T08:45:03 CAT" duration-ms="262" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1ed4ae0f]" started-at="2022-10-14T01:00:01 CAT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-14T01:00:18 CAT" duration-ms="17070" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Registered user will come to an application and login and logout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User will come  to an application and perfom activities"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at reusableMethods.ActionMethods.moveToElement_custom(ActionMethods.java:83)
+at pageObjects.LandingPage.NavigateToResource(LandingPage.java:21)
+at stepsDefinitions.LoginStepsDefinitions.user_enters_username(LoginStepsDefinitions.java:24)
+at ✽.User enters username(file:///C:/Users/Zwivhuya/Automation_Practice/EKunduPractice/FeatureFile/Login.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.kurtosysTestCase -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@1ed4ae0f]" started-at="2022-10-14T01:00:18 CAT" name="tearDownClass" finished-at="2022-10-14T01:00:18 CAT" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

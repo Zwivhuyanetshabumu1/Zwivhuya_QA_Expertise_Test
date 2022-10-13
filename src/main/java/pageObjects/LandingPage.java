@@ -22,6 +22,6 @@ public class LandingPage extends TestBase{
 		Action.click_custom(DriverFactory.getInstance().getDriver().findElement(WhitePapers_eBooks), "White Papers eBooks");
 		String ActualPageTitle = DriverFactory.getInstance().getDriver().getTitle();
 		Action.assertEqualsString_custom("White Papers | Kurtosys", ActualPageTitle, "Page Title");
-		
+	
 	}
 }

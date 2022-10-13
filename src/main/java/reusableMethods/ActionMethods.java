@@ -34,6 +34,7 @@ public class ActionMethods  {
 			//log success message in exgent report
 			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName+"==> Ented value as: "+valueToBeSent);
 
+
 		} catch (Exception e) {
 			//log failure in extent
 			ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Value enter in field: "+fieldName + " is failed due to exception: "+e);
@@ -140,22 +141,26 @@ public class ActionMethods  {
 		String text = "";
 		try {
 			text = element.getText();
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName+"==> Text retrived is: "+ text);
+			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName+"==> Text retried is: "+ text);
 			return text;
 		} catch (Exception e) {		
-			ExtentFactory.getInstance().getExtent().log(Status.FAIL, fieldName+"==> Text not retrived due to exception: "+ e);
+			ExtentFactory.getInstance().getExtent().log(Status.FAIL, fieldName+"==> Text not retried due to exception: "+ e);
 
 		}
 		return text;
 	}
 	
+	//Scroll untill element is Visible
 	
-	
-	
-	
-	
+	public void ScrollToElementInSilience(WebElement element, String fieldName) throws Exception {
+		
+		   try {
+		      ((JavascriptExecutor)DriverFactory.getInstance().getDriver()).executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'})", element);
+		      ExtentFactory.getInstance().getExtent().log(Status.PASS,"Page Scrolled untill "+fieldName+" displayed Successfully! ");
+		   } catch (Exception e) {
+			   ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Unable to scroll to " +fieldName +" element due to exception: "+e);
+		   }
+		}
 	
 }
-
-
 
