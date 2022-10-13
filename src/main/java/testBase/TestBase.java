@@ -14,7 +14,7 @@ import reusableMethods.ExcelDataSheet;
 import reusableMethods.PropertiesFile;
 
 public class TestBase extends ActionMethods{
-	BrowserFactory BF = new  BrowserFactory();
+	static BrowserFactory BF = new  BrowserFactory();
 	
 
 	
