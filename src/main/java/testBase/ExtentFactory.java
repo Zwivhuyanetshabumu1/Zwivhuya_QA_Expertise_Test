@@ -4,12 +4,13 @@ import com.aventstack.extentreports.ExtentTest;
 
 public class ExtentFactory {
 	
-	
+	//ExtentFactory
 private ExtentFactory() {
 		
 	}
 	
 	private static ExtentFactory instance = new ExtentFactory();
+	
 	
 	public static ExtentFactory getInstance() {
 		return instance;
@@ -25,6 +26,8 @@ private ExtentFactory() {
    }
    public void removeExtentObject() {
 	   extent.remove();
+	   
+	   
    }
 
 }

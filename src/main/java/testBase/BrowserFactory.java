@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BrowserFactory   {
 	
 	public WebDriver creatrBrowserInstance(String browser) {
-		//WebDriver driver = null;
+	
 		RemoteWebDriver driver = null;
 
 
@@ -26,10 +26,7 @@ public class BrowserFactory   {
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
 	}
-	else if(browser.equalsIgnoreCase("ie")) {
-		WebDriverManager.iedriver().setup();
-		driver = new InternetExplorerDriver() ;
-	}
+	
 	return driver;
 
 	
