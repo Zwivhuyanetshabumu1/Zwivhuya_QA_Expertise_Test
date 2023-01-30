@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="Test1(failed)">
     <classes>
-      <class name="testCases.kurtosysTestCase">
+      <class name="testCases.llabeAssessment">
         <methods>
           <include name="LuanchBrowser"/>
           <include name="tearDown"/>
-          <include name="KurtosysTechnicalAssessment" invocation-numbers="0"/>
+          <include name="IlabTechnicalAssessment" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testCases.kurtosysTestCase -->
+      </class> <!-- testCases.llabeAssessment -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
