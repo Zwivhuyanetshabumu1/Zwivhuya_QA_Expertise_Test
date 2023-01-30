@@ -22,6 +22,7 @@ public class TestBase extends ActionMethods{
 	@BeforeMethod
 	public static void LuanchBrowser() throws Exception {
 		String broswer = PropertiesFile.getPropertyValue("browser");
+		
 		String url = PropertiesFile.getPropertyValue("url");
 		DriverFactory.getInstance().setDriver(BF.creatrBrowserInstance(broswer));
 		DriverFactory.getInstance().getDriver().manage().window().maximize();
