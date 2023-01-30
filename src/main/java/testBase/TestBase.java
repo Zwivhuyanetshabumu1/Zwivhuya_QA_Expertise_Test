@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import pageObjects.LandingPage;
-import pageObjects.WhitePaperseBooks;
+import pageObjects.IlabLandingPage;
+import pageObjects.JobApplicationForm;
 import reusableMethods.ActionMethods;
 import reusableMethods.ExcelDataSheet;
 import reusableMethods.PropertiesFile;

@@ -10,7 +10,7 @@
   <test  name="Test1">
     <classes>
       
-      <class name="testCases.kurtosysTestCase"/>
+      <class name="testCases.llabeAssessment"/>
     </classes>
   </test> <!-- Test -->
   

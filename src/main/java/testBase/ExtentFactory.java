@@ -1,7 +1,5 @@
 package testBase;
 
-import org.openqa.selenium.WebDriver;
-
 import com.aventstack.extentreports.ExtentTest;
 
 public class ExtentFactory {
@@ -16,9 +14,9 @@ private ExtentFactory() {
 	public static ExtentFactory getInstance() {
 		return instance;
 	}
-   ThreadLocal<ExtentTest> extent = new ThreadLocal<ExtentTest>();
+   static ThreadLocal<ExtentTest> extent = new ThreadLocal<ExtentTest>();
    
-   public ExtentTest getExtent() {
+   public static ExtentTest getExtent() {
 	   return extent.get();
    }
    

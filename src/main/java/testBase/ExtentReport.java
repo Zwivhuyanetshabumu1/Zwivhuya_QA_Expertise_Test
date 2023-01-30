@@ -26,9 +26,9 @@ public class ExtentReport {
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReport);
 
-		sparkReport.config().setDocumentTitle("KurtosysTechnicalAssessment");
+		sparkReport.config().setDocumentTitle("ILabTechnicalAssessment");
 		sparkReport.config().setTheme(Theme.DARK);
-		sparkReport.config().setReportName("KurtosysTechnicalAssessment Report");
+		sparkReport.config().setReportName("ILabTechnicalAssessment Report");
 
 		extent.setSystemInfo("Executed on Enviroment: ",PropertiesFile.getPropertyValue("url"));
 		extent.setSystemInfo("Executed on Browser : ", PropertiesFile.getPropertyValue("browser"));
