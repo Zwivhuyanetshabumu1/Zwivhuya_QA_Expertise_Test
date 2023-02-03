@@ -1,7 +1,6 @@
 package testBase;
 
 import org.openqa.selenium.WebDriver;
-//DriverFactory
 
 
 public class DriverFactory {

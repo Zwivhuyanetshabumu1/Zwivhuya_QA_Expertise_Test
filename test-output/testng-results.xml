@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-30T11:07:18 CAT" name="Suite" finished-at="2023-01-30T11:08:08 CAT" duration-ms="49615">
+  <suite started-at="2023-02-03T18:18:43 CAT" name="Suite" finished-at="2023-02-03T18:19:08 CAT" duration-ms="25106">
     <groups>
     </groups>
-    <test started-at="2023-01-30T11:07:18 CAT" name="Test1" finished-at="2023-01-30T11:08:08 CAT" duration-ms="49615">
-      <class name="testCases.llabeAssessment">
-        <test-method is-config="true" signature="LuanchBrowser()[pri:0, instance:testCases.llabeAssessment@726a17c4]" started-at="2023-01-30T11:07:19 CAT" name="LuanchBrowser" finished-at="2023-01-30T11:07:43 CAT" duration-ms="23690" status="PASS">
+    <test started-at="2023-02-03T18:18:43 CAT" name="Test1" finished-at="2023-02-03T18:19:08 CAT" duration-ms="25106">
+      <class name="testCases.AutomationTest">
+        <test-method is-config="true" signature="LuanchBrowser()[pri:0, instance:testCases.AutomationTest@1280851e]" started-at="2023-02-03T18:18:44 CAT" name="LuanchBrowser" finished-at="2023-02-03T18:19:01 CAT" duration-ms="17662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LuanchBrowser -->
-        <test-method signature="IlabTechnicalAssessment(java.lang.Object)[pri:0, instance:testCases.llabeAssessment@726a17c4]" started-at="2023-01-30T11:07:43 CAT" name="IlabTechnicalAssessment" data-provider="Data" finished-at="2023-01-30T11:08:07 CAT" duration-ms="24782" status="PASS">
+        <test-method signature="TechnicalAssessment(java.lang.Object)[pri:0, instance:testCases.AutomationTest@1280851e]" started-at="2023-02-03T18:19:01 CAT" name="TechnicalAssessment" data-provider="Data" finished-at="2023-02-03T18:19:07 CAT" duration-ms="5276" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{TesctCaseName=Navigate to Ilab Website and apply the first south african job without attachment then verify that the validation message displayed, Email=automationAssessment@iLABQuality.com, LastName=Netshabumu, TC_ID=TC001, FirstName=Zwivhuya}]]>
+                <![CDATA[{TesctCaseName=QA Expertise Test Automation Testing , SelectRepublic=Republic, TC_ID=TC001, SelectCountry=South}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- IlabTechnicalAssessment -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.llabeAssessment@726a17c4]" started-at="2023-01-30T11:08:07 CAT" name="tearDown" finished-at="2023-01-30T11:08:08 CAT" duration-ms="423" status="PASS">
+        </test-method> <!-- TechnicalAssessment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.AutomationTest@1280851e]" started-at="2023-02-03T18:19:07 CAT" name="tearDown" finished-at="2023-02-03T18:19:08 CAT" duration-ms="1322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.llabeAssessment -->
+      </class> <!-- testCases.AutomationTest -->
     </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

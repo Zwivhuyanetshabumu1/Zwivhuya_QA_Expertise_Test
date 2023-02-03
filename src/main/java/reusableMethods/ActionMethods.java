@@ -88,6 +88,43 @@ WebDriver driver;
 		}
 	}
 
+	
+	
+	
+	
+	//check if element is not Present
+		public boolean isElementNotPresent_custom(WebElement element,String fieldName){
+			boolean flag = true;
+			try {
+				flag = element.isDisplayed();
+				ExtentFactory.getExtent().log(Status.PASS, fieldName+"==> No Presence of element: "+ flag);
+				return flag;
+			} catch (Exception e) {
+				ExtentFactory.getExtent().log(Status.FAIL, "Checking for no presence of element : " +fieldName +" not tested due to exception: "+e);
+				return flag;
+			}
+		}	
+	
+	
+	
+	
+	//check if element is Selected 
+		public boolean isElementSelected_custom(WebElement element,String fieldName){
+			boolean flag = false;
+			try {
+				flag = element.isSelected();
+				ExtentFactory.getExtent().log(Status.PASS, fieldName+"==> Presence of field is: "+ flag);
+				return flag;
+			} catch (Exception e) {
+				ExtentFactory.getExtent().log(Status.FAIL, "Checking for presence of field: " +fieldName +" not tested due to exception: "+e);
+				return flag;
+			}
+		}
+	
+	
+	
+	
+	
 
 	//Select dropdown value value by visibleText
 	public void selectDropDownByVisibleText_custom(WebElement element, String fieldName, String ddVisibleText) throws Throwable {
@@ -150,6 +187,9 @@ WebDriver driver;
 			   ExtentFactory.getExtent().log(Status.FAIL, "Unable to scroll to " +fieldName +" element due to exception: "+e);
 		   }
 		}
+	
+	//Genetate Random Phone Number
+	
 	public String genetatePhoneNumber() {
 		String num1=String.valueOf((int) ThreadLocalRandom.current().nextInt(6, 8 + 1));
 		String num2=String.valueOf((long) Math.floor(Math.random()*7_000_000_0L)+1_000_000_0L);

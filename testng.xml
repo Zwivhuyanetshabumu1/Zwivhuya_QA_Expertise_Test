@@ -10,7 +10,7 @@
   <test  name="Test1">
     <classes>
       
-      <class name="testCases.llabeAssessment"/>
+      <class name="testCases.AutomationTest"/>
     </classes>
   </test> <!-- Test -->
   

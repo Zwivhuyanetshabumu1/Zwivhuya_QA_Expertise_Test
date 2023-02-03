@@ -4,7 +4,7 @@ import com.aventstack.extentreports.ExtentTest;
 
 public class ExtentFactory {
 	
-	//ExtentFactory
+
 private ExtentFactory() {
 		
 	}
